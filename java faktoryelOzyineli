@@ -1,0 +1,25 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+
+/**
+ *5
+ * @author FURKAN
+ */
+public class JavaApplication1 {
+
+    public static int f(int x){
+        if(x==0) return 1;
+        return x*f(x-1);
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Faktöryel almak istediğiniz sayıyı giriniz : ");
+        Scanner s = new Scanner(System.in);
+        int fak = s.nextInt();
+        System.out.println("Sonuc : "+f(fak));
+    }
+}
